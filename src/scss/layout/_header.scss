@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+
+  .logo {
+    max-width: 50rem;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+
+  input[type='email'] {
+    margin-right: 1.75rem;
+    flex-basis: 47%;
+    color: $text-color;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid $light-grey-color;
+
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+}
+
+.features-section {
+  text-align: center;
+}
