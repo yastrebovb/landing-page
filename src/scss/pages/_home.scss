@@ -92,6 +92,21 @@
   }
 }
 
+.arguments-section-wrapper {
+  &:after {
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 8.5rem;
+    border-bottom: 5.65vh solid #eef4fb;
+    border-left: 98vw solid transparent;
+    height: 5px;
+    content: '';
+    z-index: -1;
+    transform: scale(1, 6);
+  }
+}
 .arguments-section {
   position: relative;
   text-align: center;
@@ -150,18 +165,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     content: '';
-  }
-
-  &:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-bottom: 32vh solid #eef4fb;
-    border-left: 100vw solid transparent;
-    content: '';
-    z-index: -1;
   }
 }
 
