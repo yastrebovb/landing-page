@@ -1,6 +1,6 @@
 .hero-section {
   display: flex;
-  padding: 8rem 0;
+  padding: 5rem 0;
 
   &__heading {
     margin-bottom: 2.5rem;
@@ -166,5 +166,33 @@
 }
 
 .testimonials-section-wrapper {
-  background-color: #eef4fb;
+  background-image: linear-gradient(
+    to bottom,
+    #eef4fb,
+    #f3f6fc,
+    #f8f9fd,
+    #fcfcfe,
+    #ffffff
+  );
+}
+.testimonials-section {
+  text-align: center;
+
+  .review {
+    line-height: 2.5rem;
+    text-align: center;
+  }
+}
+
+.start-section {
+  text-align: center;
+
+  &__form {
+    margin: 12rem 0;
+    justify-content: center;
+
+    input[type='email'] {
+      flex-basis: 40%;
+    }
+  }
 }

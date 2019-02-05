@@ -14,7 +14,9 @@
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/button', 'components/form';
+@import 'components/button', 'components/form', 'components/slider';
 
 // 6. Page-specific styles
 @import 'pages/home';
+
+@import '../../node_modules/@glidejs/glide/dist/css/glide.core.min.css';
