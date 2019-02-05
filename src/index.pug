@@ -1,127 +1,118 @@
-include ./mixins.pug
+extends layout.pug
+include mixins.pug
 
-doctype html
-html(lang='en')
-  head
-    title
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  body
-    nav.navigation
-      a(href="./index.html")
-        img.logo(src="./public/img/logo.png", alt="TimeSavr")
+block content
+  header
+    section.hero-section.container
+      .block
+        h1.heading.heading--big.hero-section__heading Save more time
+        p.text.hero-section__text 
+          |We built this app because we wanted to save people time.
+          br
+          |That's what every app in the universe should do.
+        form.form.hero-section__form(action="")
+          input(type="email" placeholder="Email Adress")
+          input.btn.btn--orange(type="submit", value="Start Saving Time")
+        .companies-list
+          a(href="")
+            img(src="./public/img/companies/3aw.png", alt="")
+          a(href="")
+            img(src="./public/img/companies/antihill.png", alt="")
+          a(href="")
+            img(src="./public/img/companies/elite-daily.png", alt="")
+          a(href="")
+            img(src="./public/img/companies/entrepreneur.png", alt="")
+          a(href="")
+            img(src="./public/img/companies/forbes.png", alt="")
+          a(href="")
+            img(src="./public/img/companies/huffington.png", alt="")
+          a(href="")
+            img(src="./public/img/companies/inc.png", alt="")
+      .block
+        img.hero-section__phone(src="./public/img/phone.png", alt="TimeSavr app screenshot")
+      
+  section.features-section.container
+    p.title.features-section__title Features
+    h2.heading.features-section__heading
+      |This app was made to 
+      br
+      |save you more time in a day
+    p.text.features-section__text
+      |We build this app because we wanted to save people time.
+      br
+      |That's what every app in the universe should do.
+    .features-section__list
+      .list__item
+        img.icon(src="./public/img/features/connect.png", alt="")
+        p.item__title Easily connect to dekstop
+        p.text.item__text
+          |We built this app because we wanted
+          |To help people. That's what every app 
+          | should do, right?
+      .list__item
+        img.icon(src="./public/img/features/shows.png", alt="")
+        p.item__title Easily connect to dekstop
+        p.text.item__text
+          |We built this app because we wanted
+          |To help people. That's what every app 
+          | should do, right?
+      .list__item
+        img.icon(src="./public/img/features/revenue.png", alt="")
+        p.item__title Easily connect to dekstop
+        p.text.item__text
+          |We built this app because we wanted
+          |To help people. That's what every app 
+          | should do, right?  
 
-    header
-      section.hero-section.container
-        .block
-          h1.heading.heading--big.hero-section__heading Save more time
-          p.text.hero-section__text 
-            |We built this app because we wanted to save people time.
-            br
-            |That's what every app in the universe should do.
-          form.form.hero-section__form(action="")
-            input(type="email" placeholder="Email Adress")
-            input.btn.btn--orange(type="submit", value="Start Saving Time")
-          .companies-list
-            a(href="")
-              img(src="./public/img/companies/3aw.png", alt="")
-            a(href="")
-              img(src="./public/img/companies/antihill.png", alt="")
-            a(href="")
-              img(src="./public/img/companies/elite-daily.png", alt="")
-            a(href="")
-              img(src="./public/img/companies/entrepreneur.png", alt="")
-            a(href="")
-              img(src="./public/img/companies/forbes.png", alt="")
-            a(href="")
-              img(src="./public/img/companies/huffington.png", alt="")
-            a(href="")
-              img(src="./public/img/companies/inc.png", alt="")
-        .block
-          img.hero-section__phone(src="./public/img/phone.png", alt="TimeSavr app screenshot")
-        
-    section.features-section.container
-      p.title.features-section__title Features
-      h2.heading.features-section__heading
-        |This app was made to 
-        br
-        |save you more time in a day
-      p.text.features-section__text
-        |We build this app because we wanted to save people time.
-        br
-        |That's what every app in the universe should do.
-      .features-section__list
-        .list__item
-          img.icon(src="./public/img/features/connect.png", alt="")
-          p.item__title Easily connect to dekstop
-          p.text.item__text
+  section.arguments-section.container
+    p.title.arguments-section__title If you're in doubt
+    h2.heading.arguments__heading Why choose TimeSavr
+    .arguments
+      .argument.argument_1
+        p.argument__title Before TimeSave
+        ul.argument__list
+          li 
+            |There are many varuations of passages of 
+            |Lorem ipsum available.
+          li 
+            |There are many varuations of passages of 
+            |Lorem ipsum available.
+          li 
+            |The generated Lorem Ipsum is free.
+          li
+            |Basically everything sucked.
+      .argument.argument_2
+        p.argument__title TimeSavr
+        ul.argument__list
+          li 
+            |There are many varuations of passages of 
+            |Lorem ipsum available.
+          li 
+            |There are many varuations of passages of 
+            |Lorem ipsum available.
+          li 
+            |The generated Lorem Ipsum is free.
+          li 
+            |The generated Lorem Ipsum is free.
+          li
+            |Basically everything sucked.
+          li
             |We built this app because we wanted
-            |To help people. That's what every app 
-            | should do, right?
-        .list__item
-          img.icon(src="./public/img/features/shows.png", alt="")
-          p.item__title Easily connect to dekstop
-          p.text.item__text
-            |We built this app because we wanted
-            |To help people. That's what every app 
-            | should do, right?
-        .list__item
-          img.icon(src="./public/img/features/revenue.png", alt="")
-          p.item__title Easily connect to dekstop
-          p.text.item__text
-            |We built this app because we wanted
-            |To help people. That's what every app 
-            | should do, right?  
-
-    section.arguments-section.container
-      p.title.arguments-section__title If you're in doubt
-      h2.heading.arguments__heading Why choose TimeSavr
-      .arguments
-        .argument.argument_1
-          p.argument__title Before TimeSave
-          ul.argument__list
-            li 
-              |There are many varuations of passages of 
-              |Lorem ipsum available.
-            li 
-              |There are many varuations of passages of 
-              |Lorem ipsum available.
-            li 
-              |The generated Lorem Ipsum is free.
-            li
-              |Basically everything sucked.
-        .argument.argument_2
-          p.argument__title TimeSavr
-          ul.argument__list
-            li 
-              |There are many varuations of passages of 
-              |Lorem ipsum available.
-            li 
-              |There are many varuations of passages of 
-              |Lorem ipsum available.
-            li 
-              |The generated Lorem Ipsum is free.
-            li 
-              |The generated Lorem Ipsum is free.
-            li
-              |Basically everything sucked.
-            li
-              |We built this app because we wanted
-              |To help people.
-          button.btn.btn--white Start yout free 30-day trial
-    
-    .testimonials-section-wrapper
-      section.testimonials-section.container
-        p.title.arguments__title Testimonials
-        h2.heading.arguments__heading People who trust us
-        +slider(1,2,3,4)
-    
-    section.start-section.container
-      p.title.start-section__title Get started in less than 30 seconds
-      h1.heading.heading--big.start-section__header 
-        |Are you ready to save
-        br
-        |more time?
-      form.form.start-section__form(action="")
-            input(type="email" placeholder="Email Adress")
-            input.btn.btn--orange(type="submit", value="Start Saving Time")
+            |To help people.
+        button.btn.btn--white Start yout free 30-day trial
+  
+  .testimonials-section-wrapper
+    section.testimonials-section.container
+      p.title.arguments__title Testimonials
+      h2.heading.arguments__heading People who trust us
+      +slider(1,2,3,4)
+  
+  section.start-section.container
+    p.title.start-section__title Get started in less than 30 seconds
+    h1.heading.heading--big.start-section__header 
+      |Are you ready to save
+      br
+      |more time?
+    form.form.start-section__form(action="")
+          input(type="email" placeholder="Email Adress")
+          input.btn.btn--orange(type="submit", value="Start Saving Time")
