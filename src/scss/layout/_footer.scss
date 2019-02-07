@@ -2,4 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__social {
+    display: flex;
+    width: 23rem;
+    justify-content: space-around;
+
+    a {
+      flex-basis: 25%;
+    }
+  }
 }
