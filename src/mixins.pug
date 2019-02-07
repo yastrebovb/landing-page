@@ -1,16 +1,30 @@
-mixin slider(...slides)
-  .glide
-    .glide__track(data-glide-el='track')
-      .glide__slides
-        each slide in slides
-          .glide__slide.review
-            p.review__text.text
-              |I thought this app was one of the most valuable apps
-              |I've ever tried in my life. Loved it!
-            p.review__name <span>Todd Quinto,</span> works at Google
-      .glide__bullets(data-glide-el='controls[nav]')
-        each slide in slides
-          button.glide__bullet(data-glide-dir=`=${slide}`)
-      .glide__arrows(data-glide-el='controls')
+mixin slider(type, ...slides)
+  if type === 'reviews'
+    .glide.glide--reviews
+      .glide__track(data-glide-el='track')
+        .glide__slides
+          each slide in slides
+            .glide__slide.review
+              p.review__text.text
+                |I thought this app was one of the most valuable apps
+                |I've ever tried in my life. Loved it!
+              p.review__name <span>Todd Quinto,</span> works at Google
+        .glide__bullets(data-glide-el='controls[nav]')
+          each slide in slides
+            button.glide__bullet(data-glide-dir=`=${slide}`)
+        .glide__arrows(data-glide-el='controls')
+          button.glide__arrow.glide__arrow--left(data-glide-dir='<') <
+          button.glide__arrow.glide__arrow--right(data-glide-dir='>') > 
+  else if type === 'features'
+    .glide.glide--features
+      .glide__track(data-glide-el='track')
+        .glide__slides
+          each slide in slides
+            .glide__glide.screenshot
+              img(src="./public/img/screenshots/first.png", alt="")
+        .glide__bullets(data-glide-el='controls[nav]')
+          each slide in slides
+            button.glide__bullet(data-glide-dir=`=${slide}`)
+        .glide__arrows(data-glide-el='controls')
           button.glide__arrow.glide__arrow--left(data-glide-dir='<') <
           button.glide__arrow.glide__arrow--right(data-glide-dir='>') > 
