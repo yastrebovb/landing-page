@@ -15,10 +15,18 @@
     @include respond(tab-port) {
       bottom: 6rem;
     }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__form {
     margin: 8rem 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   .companies-list {
@@ -62,6 +70,10 @@
     @include respond(tab-port) {
       right: -195px;
     }
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
 
@@ -76,6 +88,10 @@
 
     .list__item {
       flex-basis: 30%;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
     }
   }
 
@@ -228,6 +244,10 @@
 
     input[type='email'] {
       flex-basis: 40%;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
     }
   }
 }
