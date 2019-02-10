@@ -1,6 +1,6 @@
 .hero-section {
   display: flex;
-  padding: 5rem 0;
+  padding: 5rem 2.5rem;
 
   &__heading {
     margin-bottom: 2.5rem;
@@ -11,6 +11,10 @@
     bottom: 12rem;
     width: auto;
     max-height: 70rem;
+
+    @include respond(tab-port) {
+      bottom: 6rem;
+    }
   }
 
   &__form {
@@ -54,6 +58,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
+
+    @include respond(tab-port) {
+      right: -195px;
+    }
   }
 }
 
@@ -147,6 +155,20 @@
           margin-bottom: 1.35rem;
         }
       }
+
+      &_1 {
+        @include respond(tab-port) {
+          margin-bottom: 4rem;
+        }
+      }
+
+      @include respond(tab-port) {
+        z-index: 1;
+      }
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
     }
   }
 
