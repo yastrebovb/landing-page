@@ -1,6 +1,11 @@
 .glide {
+  &__track {
+    overflow: visible !important;
+  }
+
   &__slides {
     padding-bottom: 5.9rem !important;
+    overflow: visible !important;
   }
 
   &__slide {
