@@ -1,6 +1,14 @@
 .form {
   display: flex;
 
+  input {
+    margin-bottom: 2rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   input[type='email'] {
     margin-right: 1.75rem;
     flex-basis: 47%;
@@ -13,10 +21,6 @@
     &::placeholder {
       color: $text-color;
     }
-  }
-
-  input:focus {
-    outline: none;
   }
 }
 

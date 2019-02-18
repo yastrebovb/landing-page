@@ -88,6 +88,10 @@
 
     .list__item {
       flex-basis: 30%;
+
+      img {
+        max-width: 12rem;
+      }
     }
 
     @include respond(phone) {
