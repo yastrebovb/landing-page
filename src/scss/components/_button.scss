@@ -25,4 +25,8 @@
     transform: translateY(-0.5rem);
     box-shadow: 10px 9px 46px -14px rgba(130, 130, 130, 1);
   }
+
+  &:active {
+    outline: none;
+  }
 }

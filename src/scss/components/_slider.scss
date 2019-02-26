@@ -33,6 +33,10 @@
     &--left {
       margin-right: 11rem;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__bullet {
