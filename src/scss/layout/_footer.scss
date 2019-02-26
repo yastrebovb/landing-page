@@ -11,6 +11,10 @@
 
     a {
       flex-basis: 25%;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
