@@ -13,18 +13,18 @@ mixin slider(type, ...slides)
           each slide in slides
             button.glide__bullet(data-glide-dir=`=${slide}`)
         .glide__arrows(data-glide-el='controls')
-          button.glide__arrow.glide__arrow--left(data-glide-dir='<') <
-          button.glide__arrow.glide__arrow--right(data-glide-dir='>') > 
+          button.glide__arrow.glide__arrow--left(data-glide-dir='<') &lt;
+          button.glide__arrow.glide__arrow--right(data-glide-dir='>') &gt;
   else if type === 'features'
     .glide.glide--features
       .glide__track(data-glide-el='track')
         .glide__slides
           each slide in slides
             .glide__glide.screenshot
-              img(src="./public/img/screenshots/first.png", alt="")
+              img(src='./public/img/screenshots/first.png', alt='')
         .glide__bullets(data-glide-el='controls[nav]')
           each slide in slides
             button.glide__bullet(data-glide-dir=`=${slide}`)
         .glide__arrows(data-glide-el='controls')
-          button.glide__arrow.glide__arrow--left(data-glide-dir='<') <
-          button.glide__arrow.glide__arrow--right(data-glide-dir='>') > 
+          button.glide__arrow.glide__arrow--left(data-glide-dir='<') &lt;
+          button.glide__arrow.glide__arrow--right(data-glide-dir='>') &gt;
