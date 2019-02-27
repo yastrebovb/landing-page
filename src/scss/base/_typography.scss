@@ -6,10 +6,10 @@ body {
 
 .heading {
   margin: 2.5rem 0;
-  font-size: 5.1rem;
+  font-size: 4.7rem;
 
   &--big {
-    font-size: 7.5rem;
+    font-size: 6rem;
 
     @include respond(phone) {
       font-size: 4.2rem !important;
@@ -23,12 +23,12 @@ body {
 
 .title {
   margin: 1.5rem 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: $orange-color;
 }
 
 .text {
   margin: 2.5rem 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
