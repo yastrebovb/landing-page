@@ -7,6 +7,7 @@ new Glide('.glide--reviews', {
   perView: 3,
   focusAt: 'center',
   gap: '32px',
+  perTouch: false,
   unlimited: true,
   breakpoints: {
     800: {
@@ -23,6 +24,7 @@ new Glide('.glide--features', {
   perView: 4,
   focusAt: 'center',
   gap: '56px',
+  perTouch: false,
   unlimited: true,
   breakpoints: {
     800: {
