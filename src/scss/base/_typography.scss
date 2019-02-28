@@ -12,12 +12,12 @@ body {
     font-size: 6rem;
 
     @include respond(phone) {
-      font-size: 4.2rem !important;
+      font-size: 4.6rem !important;
     }
   }
 
   @include respond(phone) {
-    font-size: 3.5rem;
+    font-size: 3.9rem;
   }
 }
 

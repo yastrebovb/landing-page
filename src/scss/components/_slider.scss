@@ -29,12 +29,16 @@
     height: 4rem;
     color: $light-grey-color;
     font-size: 1.3rem;
+    transition: color 0.4s linear;
     cursor: pointer;
 
     &--left {
       margin-right: 11rem;
     }
 
+    &:hover {
+      color: darken($light-grey-color, 20%);
+    }
     &:focus {
       outline: none;
     }
