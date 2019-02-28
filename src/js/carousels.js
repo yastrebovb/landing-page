@@ -1,10 +1,10 @@
 import Glide from '@glidejs/glide'
 
-new Glide('.glide--reviews', {
+new Glide('.glide--features', {
   type: 'carousel',
-  perView: 3,
+  perView: 4,
   focusAt: 'center',
-  gap: '32px',
+  gap: '56px',
   perTouch: false,
   unlimited: true,
   breakpoints: {
@@ -17,11 +17,11 @@ new Glide('.glide--reviews', {
   }
 }).mount()
 
-new Glide('.glide--features', {
+new Glide('.glide--reviews', {
   type: 'carousel',
-  perView: 4,
+  perView: 3,
   focusAt: 'center',
-  gap: '56px',
+  gap: '32px',
   perTouch: false,
   unlimited: true,
   breakpoints: {

@@ -107,11 +107,10 @@
   .screenshot {
     border-radius: 3px;
     box-shadow: 0px 22px 65px 0px rgba(35, 35, 35, 0.08);
-    min-height: 40rem;
-    max-width: 25rem;
+    width: auto !important;
 
     img {
-      height: 30rem;
+      max-height: 38rem;
       width: auto;
     }
   }
