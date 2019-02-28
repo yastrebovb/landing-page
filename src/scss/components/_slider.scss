@@ -49,12 +49,12 @@
     margin-left: 0.4rem;
     border: none;
     border-radius: 50%;
-    background-color: rgba(212, 216, 227, 0.25);
+    background-color: lighten($text-color, 69%);
     width: 9px;
     height: 9px;
 
     &--active {
-      background-color: #323639;
+      background-color: lighten($text-color, 30%);
     }
   }
 }
