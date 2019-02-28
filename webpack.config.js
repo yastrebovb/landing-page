@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const AutoPrefixerPlugin = require('autoprefixer')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssUrlRelativePlugin = require('css-url-relative-plugin')
 
@@ -18,6 +19,17 @@ const scss = {
   use: [
     IS_DEV ? 'style-loader' : MiniCssExtractPlugin.loader,
     'css-loader',
+    {
+      loader: 'postcss-loader',
+      options: {
+        plugins: [
+          AutoPrefixerPlugin({
+            browsers: ['ie >= 8', 'last 4 version']
+          })
+        ],
+        sourceMap: true
+      }
+    },
     'sass-loader?sourcemap'
   ]
 }
