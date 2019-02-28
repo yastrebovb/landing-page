@@ -5,7 +5,8 @@ body {
 }
 
 .heading {
-  margin: 2.5rem 0;
+  display: block;
+  margin: 2.5rem auto;
   font-size: 4.7rem;
 
   &--big {
@@ -22,6 +23,7 @@ body {
 }
 
 .title {
+  display: block;
   margin: 1.5rem 0;
   font-size: 1.8rem;
   font-weight: 600;
@@ -29,10 +31,11 @@ body {
 }
 
 .text {
+  display: block;
   margin: 2.5rem 0;
   font-size: 1.6rem;
 
   @include respond(phone) {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
   }
 }
