@@ -27,7 +27,7 @@ block content
           img(src='./public/img/companies/huffington.png', alt='')
         a(href='')
           img(src='./public/img/companies/inc.png', alt='')
-    .block
+    .block(data-aos='fade-up')
       img.hero-section__phone(src='./public/img/phone.png', alt='TimeSavr app screenshot')
       
   section.features-section.container
@@ -41,21 +41,21 @@ block content
       br
       |That's what every app in the universe should do.
     .features-section__list
-      .list__item
+      .list__item(data-aos='fade-up' data-aos-offset='200')
         img.icon(src='./public/img/features/connect.png', alt='')
         p.item__title Easily connect to dekstop
         p.text.item__text
           |We built this app because we wanted
           |To help people. That's what every app 
           | should do, right?
-      .list__item
+      .list__item(data-aos='fade-up' data-aos-offset='200')
         img.icon(src='./public/img/features/shows.png', alt='')
         p.item__title Easily connect to dekstop
         p.text.item__text
           |We built this app because we wanted
           |To help people. That's what every app 
           | should do, right?
-      .list__item
+      .list__item(data-aos='fade-up' data-aos-offset='200')
         img.icon(src='./public/img/features/revenue.png', alt='')
         p.item__title Easily connect to dekstop
         p.text.item__text
@@ -69,7 +69,7 @@ block content
       p.title.arguments-section__title If you're in doubt
       h2.heading.arguments__heading Why choose TimeSavr
       .arguments
-        .argument.argument_1
+        .argument.argument_1(data-aos='zoom-in' data-aos-offset='100')
           p.argument__title Before TimeSave
           ul.argument__list
             li 
@@ -82,7 +82,7 @@ block content
               |The generated Lorem Ipsum is free.
             li
               |Basically everything sucked.
-        .argument.argument_2
+        .argument.argument_2(data-aos='zoom-in' data-aos-offset='100')
           p.argument__title TimeSavr
           ul.argument__list
             li 
@@ -113,6 +113,6 @@ block content
       |Are you ready to save
       br
       |more time?
-    form.form.start-section__form(action='')
+    form.form.start-section__form(action='' data-aos='zoom-in-up' data-aos-offset='100')
           input(type='email' placeholder='Email Adress')
           input.btn.btn--orange(type='submit', value='Start Saving Time')
