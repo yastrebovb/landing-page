@@ -1,3 +1,41 @@
+.hero-section-bg-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+
+  &:after {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 534px;
+    height: 768px;
+    content: '';
+    background-image: url('../public/img/bg/hero_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @include respond(big-desktop) {
+      width: 634px;
+      height: 898px;
+    }
+
+    @include respond(tab-land) {
+      right: -175px;
+    }
+
+    @include respond(tab-port) {
+      right: -335px;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+}
+
 .hero-section {
   display: flex;
   padding: 5rem 2.5rem;
@@ -57,22 +95,31 @@
       }
     }
   }
+}
+
+.features-section-wrapper {
+  position: relative;
 
   &:after {
+    display: block;
     position: absolute;
     top: 0;
+    left: -5rem;
     right: 0;
-    display: block;
-    width: 534px;
-    height: 768px;
-    content: '';
-    background-image: url('../public/img/bg/hero_bg.png');
+    width: 22.6rem;
+    height: 46.1rem;
+    background-image: url('../public/img/bg/features_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    content: '';
     z-index: -1;
 
+    @include respond(tab-land) {
+      left: -9rem;
+    }
+
     @include respond(tab-port) {
-      right: -195px;
+      left: -15.5rem;
     }
 
     @include respond(phone) {
@@ -128,21 +175,6 @@
       width: auto;
     }
   }
-
-  &:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -30rem;
-    right: 0;
-    width: 22.6rem;
-    height: 46.1rem;
-    background-image: url('../public/img/bg/features_bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    content: '';
-    z-index: -1;
-  }
 }
 
 .arguments-section-wrapper {
@@ -160,6 +192,7 @@
     transform: scale(1, 6);
   }
 }
+
 .arguments-section {
   position: relative;
   text-align: center;
@@ -245,6 +278,7 @@
     #ffffff
   );
 }
+
 .testimonials-section {
   text-align: center;
 

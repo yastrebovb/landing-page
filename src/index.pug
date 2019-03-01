@@ -2,6 +2,7 @@ extends layout.pug
 include mixins.pug
 
 block content
+  .hero-section-bg-wrapper
   section.hero-section.container
     .block
       h1.heading.heading--big.hero-section__heading Save more time
@@ -29,37 +30,38 @@ block content
     .block(data-aos='fade-up')
       img.hero-section__phone(src='./public/img/phone.png', alt='TimeSavr app screenshot')
       
-  section.features-section.container
-    p.title.features-section__title Features
-    h2.heading.features-section__heading
-      |This app was made to 
-      |save you more time in a day
-    p.text.features-section__text
-      |We build this app because we wanted to save people time.
-      |That's what every app in the universe should do.
-    .features-section__list
-      .list__item(data-aos='fade-up' data-aos-offset='200')
-        img.icon(src='./public/img/features/connect.png', alt='')
-        p.item__title Easily connect to dekstop
-        p.text.item__text
-          |We built this app because we wanted
-          |To help people. That's what every app 
-          | should do, right?
-      .list__item(data-aos='fade-up' data-aos-offset='200')
-        img.icon(src='./public/img/features/shows.png', alt='')
-        p.item__title Easily connect to dekstop
-        p.text.item__text
-          |We built this app because we wanted
-          |To help people. That's what every app 
-          | should do, right?
-      .list__item(data-aos='fade-up' data-aos-offset='200')
-        img.icon(src='./public/img/features/revenue.png', alt='')
-        p.item__title Easily connect to dekstop
-        p.text.item__text
-          |We built this app because we wanted
-          |To help people. That's what every app 
-          | should do, right?  
-    +slider('features', 1, 2, 3, 4, 5, 6)
+  .features-section-wrapper
+    section.features-section.container
+      p.title.features-section__title Features
+      h2.heading.features-section__heading
+        |This app was made to 
+        |save you more time in a day
+      p.text.features-section__text
+        |We build this app because we wanted to save people time.
+        |That's what every app in the universe should do.
+      .features-section__list
+        .list__item(data-aos='fade-up' data-aos-offset='200')
+          img.icon(src='./public/img/features/connect.png', alt='')
+          p.item__title Easily connect to dekstop
+          p.text.item__text
+            |We built this app because we wanted
+            |To help people. That's what every app 
+            | should do, right?
+        .list__item(data-aos='fade-up' data-aos-offset='200')
+          img.icon(src='./public/img/features/shows.png', alt='')
+          p.item__title Easily connect to dekstop
+          p.text.item__text
+            |We built this app because we wanted
+            |To help people. That's what every app 
+            | should do, right?
+        .list__item(data-aos='fade-up' data-aos-offset='200')
+          img.icon(src='./public/img/features/revenue.png', alt='')
+          p.item__title Easily connect to dekstop
+          p.text.item__text
+            |We built this app because we wanted
+            |To help people. That's what every app 
+            | should do, right?  
+      +slider('features', 1, 2, 3, 4, 5, 6)
 
   .arguments-section-wrapper
     section.arguments-section.container
