@@ -6,6 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const AutoPrefixerPlugin = require('autoprefixer')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssUrlRelativePlugin = require('css-url-relative-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const IS_DEV = process.env.NODE_ENV === 'dev'
 
@@ -91,7 +92,8 @@ const config = {
       chunkFilename: 'css/[id].css'
     }),
     new webpack.HashedModuleIdsPlugin(),
-    new CssUrlRelativePlugin()
+    new CssUrlRelativePlugin(),
+    new FaviconsWebpackPlugin('./src/public/ico/favicon.ico')
   ],
   devServer: {
     contentBase: path.join(__dirname, 'src')
